@@ -6,15 +6,13 @@ public class App {
         // UC1
         System.out.println("Hello World");
 
-        // UC3
-        String name;
-
-        if (args.length > 0) {
-            name = args[0];
+        // UC4
+        if (args.length == 0) {
+            System.out.println("Hello World");
         } else {
-            name = "World";
+            for (String name : args) {
+                System.out.println("Hello " + name);
+            }
         }
-
-        System.out.println("Hello " + name);
     }
 }
