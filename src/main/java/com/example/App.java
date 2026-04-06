@@ -6,18 +6,11 @@ public class App {
         // UC1
         System.out.println("Hello World");
 
-        // UC6
+        // UC7
         if (args.length == 0) {
             System.out.println("Hello, World!");
         } else {
-            String result = "";
-
-            for (String name : args) {
-                result += name + ", ";
-            }
-
-            result = result.substring(0, result.length() - 2);
-
+            String result = String.join(", ", args);
             System.out.println("Hello, " + result + "!");
         }
     }
